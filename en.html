@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Morreen Studio | Acabamentos Decorativos</title>
+    <title>Morreen Studio | Decorative Finishes</title>
 
     <script src="https://cdn.tailwindcss.com"></script>
 
@@ -62,18 +62,18 @@ href="https://cdn.jsdelivr.net/npm/flag-icons/css/flag-icons.min.css">
 
             <div class="flex items-center justify-between">
 
-                <!-- Idiomas (Mobile) -->
+                <!-- Languages (Mobile) -->
                 <div class="flex items-center gap-2 md:hidden">
 
                     <a href="index.html"
-                        class="p-2 rounded-full bg-white/10 border border-white/10 ">
+                        class="p-2 rounded-full hover:bg-white/10 transition">
 
                         <span class="fi fi-br rounded-sm"></span>
 
                     </a>
 
                     <a href="en.html"
-                        class="p-2 rounded-full hover:bg-white/10 transition">
+                        class="p-2 rounded-full bg-white/10 border border-white/10">
 
                         <span class="fi fi-ca rounded-sm"></span>
 
@@ -82,24 +82,24 @@ href="https://cdn.jsdelivr.net/npm/flag-icons/css/flag-icons.min.css">
                 </div>
 
                 <!-- Logo -->
-                <a href="index.html" class="shrink-0">
+                <a href="en.html" class="shrink-0">
 
                     <img
                         src="https://thaisdevfront.github.io/morreen-app/assets/img/Logo.png"
-                        class="w-[140px] md:w-[180px]"
-                        alt="Morreen Studio">
+                        alt="Morreen Studio"
+                        class="w-[140px] md:w-[180px]">
 
                 </a>
 
-                <!-- Desktop -->
+                <!-- Desktop Menu -->
                 <div class="hidden md:flex items-center gap-10">
 
                     <nav class="flex gap-8 text-sm">
 
-                        <a href="#">Home</a>
-                        <a href="#">Services</a>
-                        <a href="#">Projects</a>
-                        <a href="#">Contact</a>
+                        <a href="#home">Home</a>
+                        <a href="#services">Services</a>
+                        <a href="#projects">Projects</a>
+                        <a href="#contact">Contact</a>
 
                     </nav>
 
@@ -123,7 +123,7 @@ href="https://cdn.jsdelivr.net/npm/flag-icons/css/flag-icons.min.css">
 
                     </div>
 
-                    <a href="#contato"
+                    <a href="#contact"
                         class="bg-[#B8835A] hover:bg-[#c99872] duration-300 px-5 py-3 rounded-full text-sm font-semibold">
 
                         Request a Quote
@@ -132,7 +132,7 @@ href="https://cdn.jsdelivr.net/npm/flag-icons/css/flag-icons.min.css">
 
                 </div>
 
-                <!-- Botão Menu Mobile -->
+                <!-- Mobile Button -->
                 <button
                     id="menuBtn"
                     class="md:hidden p-2">
@@ -148,6 +148,29 @@ href="https://cdn.jsdelivr.net/npm/flag-icons/css/flag-icons.min.css">
     </div>
 
 </header>
+
+<!-- Mobile Menu -->
+
+<div id="mobileMenu"
+    class="fixed inset-0 bg-[#0f0f0f]/95 backdrop-blur-xl z-40 hidden">
+
+    <div class="flex flex-col justify-center items-center h-full gap-8 text-2xl">
+
+        <a href="#home" class="mobile-link">Home</a>
+        <a href="#services" class="mobile-link">Services</a>
+        <a href="#projects" class="mobile-link">Projects</a>
+        <a href="#contact" class="mobile-link">Contact</a>
+
+        <a href="#contact"
+            class="mt-6 bg-[#B8835A] px-8 py-4 rounded-full text-lg font-semibold">
+
+            Request a Quote
+
+        </a>
+
+    </div>
+
+</div>
 
 <!-- HERO -->
 
@@ -167,44 +190,37 @@ class="absolute inset-0 w-full h-full object-cover opacity-30">
 
 <p class="uppercase tracking-[6px] text-[#B8835A] mb-6">
 
-Acabamentos Decorativos
+More than decorative finishes.
+
 
 </p>
 
 <h2 class="title text-6xl md:text-8xl font-extrabold">
-
-Mais do que<br>
-
-pintura.
+We create timeless interiors.
 
 </h2>
 
 <h3 class="text-3xl mt-4 text-zinc-300">
 
-Criamos experiências.
+
+Premium decorative finishes that
+transform every space.
 
 </h3>
-
-<p class="mt-8 text-zinc-300 max-w-xl leading-8">
-
-Acabamentos decorativos exclusivos para ambientes sofisticados,
-unindo elegância, personalidade e excelência em cada detalhe.
-
-</p>
+ 
 
 <div class="flex flex-wrap gap-4 mt-10">
 
 <a href="#contato"
 class="bg-[#B8835A] px-8 py-4 rounded-full font-semibold">
 
-Solicitar orçamento
-
+Request a Quote
 </a>
 
 <a href="#projetos"
 class="glass px-8 py-4 rounded-full">
 
-Ver projetos
+View Projects
 
 </a>
 
@@ -225,8 +241,7 @@ LimeWash
 </h4>
 
 <p class="mt-3 text-sm text-zinc-400">
-
-Textura mineral sofisticada com acabamento artesanal.
+Premium mineral finish with an artisanal texture.
 
 </p>
 
@@ -238,13 +253,13 @@ Textura mineral sofisticada com acabamento artesanal.
 
 <h4 class="mt-5 font-bold text-xl">
 
-Exclusividade
+Exclusivity
 
 </h4>
 
 <p class="mt-3 text-sm text-zinc-400">
 
-Cada parede possui um acabamento único.
+Every wall features a one-of-a-kind finish.
 
 </p>
 
@@ -256,14 +271,12 @@ Cada parede possui um acabamento único.
 
 <h4 class="mt-5 font-bold text-xl">
 
-Materiais Premium
+Premium Materials
 
 </h4>
 
 <p class="mt-3 text-sm text-zinc-400">
-
-Produtos selecionados para máxima durabilidade.
-
+Carefully selected materials for lasting durability.
 </p>
 
 </div>
@@ -274,13 +287,13 @@ Produtos selecionados para máxima durabilidade.
 
 <h4 class="mt-5 font-bold text-xl">
 
-Garantia
+Quality Guaranteed
 
 </h4>
 
 <p class="mt-3 text-sm text-zinc-400">
 
-Execução impecável do início ao fim.
+Flawless execution from start to finish.
 
 </p>
 
@@ -306,13 +319,13 @@ Execução impecável do início ao fim.
 
 <p class="text-[#B8835A] uppercase tracking-[5px]">
 
-Serviços
+Services
 
 </p>
 
 <h2 class="text-5xl font-bold mt-3">
 
-Acabamentos que transformam.
+Finishes That Transform.
 
 </h2>
 
@@ -334,7 +347,7 @@ LimeWash
 
 <p class="text-zinc-400 mt-4 text-sm">
 
-Acabamento sofisticado com aspecto natural.
+Sophisticated mineral finish with handcrafted texture.
 
 </p>
 
@@ -352,7 +365,7 @@ Roman Clay
 
 <p class="text-zinc-400 mt-4 text-sm">
 
-Elegância inspirada em mármore natural.
+Elegance inspired by natural stone.
 
 </p>
 
@@ -364,13 +377,13 @@ Elegância inspirada em mármore natural.
 
 <h3 class="mt-6 font-bold">
 
-Texturas
+Decorative Textures
 
 </h3>
 
 <p class="text-zinc-400 mt-4 text-sm">
 
-Profundidade e personalidade para cada ambiente.
+Depth and character for every space.
 
 </p>
 
@@ -382,13 +395,13 @@ Profundidade e personalidade para cada ambiente.
 
 <h3 class="mt-6 font-bold">
 
-Projetos Residenciais
+Residential Projects
 
 </h3>
 
 <p class="text-zinc-400 mt-4 text-sm">
 
-Casas, apartamentos e ambientes comerciais.
+Homes, apartments, and commercial spaces.
 
 </p>
 
@@ -408,11 +421,12 @@ Casas, apartamentos e ambientes comerciais.
         <div class="mb-16">
 
             <p class="uppercase tracking-[5px] text-[#B8835A]">
-                Projetos
+                Projects
+
             </p>
 
             <h2 class="text-5xl font-bold mt-3">
-                Alguns dos nossos trabalhos.
+               A selection of our work
             </h2>
 
         </div>
@@ -511,7 +525,6 @@ Casas, apartamentos e ambientes comerciais.
 </section>
 
 <!-- DIFERENCIAIS -->
-
 <section>
 
     <div class="max-w-7xl mx-auto px-6">
@@ -521,18 +534,18 @@ Casas, apartamentos e ambientes comerciais.
             <div>
 
                 <p class="uppercase tracking-[5px] text-[#B8835A]">
-                    Diferenciais
+                    Why Choose Us
                 </p>
 
                 <h2 class="text-5xl font-bold mt-4 leading-tight">
-                    Excelência em cada detalhe.
+                    Excellence in Every Detail.
                 </h2>
 
                 <p class="text-zinc-400 mt-8 leading-8">
 
-                    Cada projeto recebe atenção exclusiva, utilizando materiais
-                    premium e técnicas artesanais que valorizam o ambiente e
-                    proporcionam um acabamento único.
+                    Every project receives personalized attention, using premium
+                    materials and handcrafted techniques to create elegant,
+                    distinctive, and long-lasting finishes.
 
                 </p>
 
@@ -542,22 +555,22 @@ Casas, apartamentos e ambientes comerciais.
 
                 <div class="glass rounded-3xl p-8">
                     <i data-lucide="check-circle-2"></i>
-                    <h4 class="font-bold mt-5">Equipe Especializada</h4>
+                    <h4 class="font-bold mt-5">Skilled Craftsmanship</h4>
                 </div>
 
                 <div class="glass rounded-3xl p-8">
                     <i data-lucide="gem"></i>
-                    <h4 class="font-bold mt-5">Materiais Premium</h4>
+                    <h4 class="font-bold mt-5">Premium Materials</h4>
                 </div>
 
                 <div class="glass rounded-3xl p-8">
                     <i data-lucide="shield-check"></i>
-                    <h4 class="font-bold mt-5">Garantia</h4>
+                    <h4 class="font-bold mt-5">Quality Guaranteed</h4>
                 </div>
 
                 <div class="glass rounded-3xl p-8">
                     <i data-lucide="sparkles"></i>
-                    <h4 class="font-bold mt-5">Acabamento Exclusivo</h4>
+                    <h4 class="font-bold mt-5">Exclusive Finishes</h4>
                 </div>
 
             </div>
@@ -583,28 +596,24 @@ Casas, apartamentos e ambientes comerciais.
 
             <p class="uppercase tracking-[5px] text-[#B8835A]">
 
-                Transforme seu ambiente
-
+              Transform Your Space
             </p>
 
             <h2 class="text-5xl font-bold mt-5">
 
-                Seu projeto merece exclusividade.
+               Your project deserves a unique finish.
 
             </h2>
 
             <p class="mt-8 text-zinc-300 max-w-2xl mx-auto leading-8">
 
-                Solicite um orçamento e descubra como um acabamento
-                decorativo pode transformar completamente seu espaço.
-
+           Request a quote and discover how premium decorative finishes can elevate your space with timeless elegance.
             </p>
 
             <a href="#contato"
                 class="inline-flex mt-10 bg-[#B8835A] hover:bg-[#C9966A] transition px-10 py-4 rounded-full font-semibold">
 
-                Solicitar orçamento
-
+               Request a Quote
             </a>
 
         </div>
@@ -625,13 +634,14 @@ Casas, apartamentos e ambientes comerciais.
 
                 <p class="uppercase tracking-[5px] text-[#B8835A]">
 
-                    Contato
+                    Contact
 
                 </p>
 
                 <h2 class="text-5xl font-bold mt-4">
 
-                    Vamos conversar.
+            Let's Talk.
+
 
                 </h2>
 
@@ -664,7 +674,7 @@ Casas, apartamentos e ambientes comerciais.
         type="text"
         required
         class="w-full bg-white/5 border border-white/10 rounded-xl px-5 py-4 outline-none"
-        placeholder="Seu nome">
+        placeholder="Your Name">
 
     <input
         id="phone"
@@ -673,61 +683,58 @@ Casas, apartamentos e ambientes comerciais.
         required
         class="w-full bg-white/5 border border-white/10 rounded-xl px-5 py-4 outline-none"
         placeholder="WhatsApp">
+<select
+    id="service"
+    name="service"
+    required
+    class="w-full bg-white/5 border border-white/10 rounded-xl px-5 py-4 outline-none text-white">
 
-    <select
-        id="service"
-        name="service"
-        required
-        class="w-full bg-white/5 border border-white/10 rounded-xl px-5 py-4 outline-none text-white">
+    <option value="" class="text-black">
+        Select a Service
+    </option>
 
-        <option value="" class="text-black">
-            Selecione um serviço
-        </option>
+    <option value="LimeWash" class="text-black">
+        LimeWash
+    </option>
 
-        <option value="LimeWash" class="text-black">
-            LimeWash
-        </option>
+    <option value="Roman Clay" class="text-black">
+        Roman Clay
+    </option>
 
-        <option value="Marmorato" class="text-black">
-            Marmorato
-        </option>
+    <option value="Decorative Texture" class="text-black">
+        Decorative Texture
+    </option>
 
-        <option value="Textura Decorativa" class="text-black">
-            Textura Decorativa
-        </option>
+    <option value="Microcement" class="text-black">
+        Microcement
+    </option>
 
-        <option value="Cimento Queimado" class="text-black">
-            Cimento Queimado
-        </option>
+    <option value="Residential Project" class="text-black">
+        Residential Project
+    </option>
 
-        <option value="Residencial" class="text-black">
-            Projeto Residencial
-        </option>
+    <option value="Commercial Project" class="text-black">
+        Commercial Project
+    </option>
 
-        <option value="Comercial" class="text-black">
-            Projeto Comercial
-        </option>
+    <option value="Other" class="text-black">
+        Other
+    </option>
 
-        <option value="Outro" class="text-black">
-            Outro
-        </option>
-
-    </select>
-
+</select>
     <textarea
         id="message"
         name="message"
         rows="5"
         required
         class="w-full bg-white/5 border border-white/10 rounded-xl px-5 py-4 outline-none"
-        placeholder="Conte um pouco sobre seu projeto"></textarea>
+        placeholder="Tell us about your project"></textarea>
 
     <button
         type="submit"
         class="w-full bg-[#B8835A] hover:bg-[#C9966A] transition py-4 rounded-xl font-semibold">
 
-        Solicitar orçamento
-
+        Request a Quote
     </button>
 
 </form>
@@ -830,7 +837,8 @@ Aguardo retorno. Obrigado!`;
 
 });
     </script>
-    
+
+
     <script>
         const menuBtn = document.getElementById("menuBtn");
 const mobileMenu = document.getElementById("mobileMenu");
